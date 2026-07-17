@@ -129,6 +129,9 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://chioma-todo-app.onrender.com",
+]
+CORS_ALLOW_ALL_ORIGINS = True
 MEDIA_URL = 'media/'
 MEDIA_ROOT = 'media/'
